@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'recipes/index'
   root 'recipes#index'
 
+ # get 'images' => 'images'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

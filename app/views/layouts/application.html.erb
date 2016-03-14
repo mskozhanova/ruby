@@ -2,13 +2,25 @@
 <html>
 <head>
   <title>Recipefinder</title>
+  	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<%= yield %>
-<p class="copyright">Powered By Food2Fork.com</p>
+	<div class="container">
+		<div class="row">
+
+			<%= yield %>
+			<nav class="navbar navbar-default navbar-fixed-bottom ">
+			  <div class="container-fluid  bg-primary">
+			    <p class="text-center"><span class="glyphicon glyphicon-copyright-mark"></span> Powered By Food2Fork.com</p>
+			  </div>
+			</nav>			
+			
+		</div>
+	</div>
 </body>
 </html>
